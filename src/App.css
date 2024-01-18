@@ -1,38 +1,54 @@
 .App {
   text-align: center;
+  background-color: #f5eded;
+  height: 100vh;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#heading{
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 5PX;
+  margin-bottom:25px;
+  text-shadow: 1px black;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    
+label{
+  font-size: 15px;
+  font-weight:600;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+span{
+  color:crimson;
+}
+.form-content{
+  /* width: 75%; */
+  height: 70vh;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #f5eded;
+}
+.btn-submit{
+  background-color: rgb(0, 0, 90);
+  width:150px;
+  height: 40px;
+  color: cornsilk;
+  border:none;
+  margin-bottom: 2px;
+  margin-top: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight:700;
+}
+.btn-submit:hover{
+ opacity: 0.7;
+}
+.btn-submit:active{
+  /* when we click the button */
+  opacity:0.4;
+}
+.fields{
+display: grid;
+align-items: center;
+margin-bottom: 5px;
+place-items: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
